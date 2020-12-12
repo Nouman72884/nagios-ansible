@@ -1,0 +1,14 @@
+[nagios]
+host-01 ansible_host=192.168.0.101
+
+[webservers]
+webserver01 ansible_host=192.168.0.101
+
+[switches]
+switch01 ansible_host=192.168.0.101
+switch02 ansible_host=192.168.0.102
+
+
+
+[server:vars]
+ansible_python_interpreter=/usr/bin/python3
