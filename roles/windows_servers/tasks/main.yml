@@ -1,0 +1,15 @@
+---
+# tasks file for windows_servers
+- name: Install NCPA
+win_package:
+path: https://assets.nagios.com/downloads/ncpa/ncpa-2.1.4.exe
+
+- name: Copy the ncpa.cfg template
+win_template:
+src: ncpa.cfg.j2
+dest: 'C:\Program Files (x86)\Nagios\NCPA\etc\ncpa.cfg'
+
+- name: Restart NCPA
+win_service:
+name: ncpapassive
+state: restarted

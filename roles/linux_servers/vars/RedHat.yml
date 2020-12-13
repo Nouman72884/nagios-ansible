@@ -1,0 +1,10 @@
+---
+# RedHat based OS variables
+# We're required to do this as the user/group NRPE is run under
+# differes between RedHat/Debian OS's
+
+__nagios_nrpe_server_pid: /var/run/nrpe/nrpe.pid
+__nagios_nrpe_server_user: nrpe
+__nagios_nrpe_server_group: nrpe
+__nagios_nrpe_server_service: nrpe
+__nagios_nrpe_server_dir: /etc/nagios
