@@ -1,8 +1,8 @@
 ---
-  - hosts: all
+  - hosts: all   # caling host from inventory/hosts
     become: true
     roles:
-      - linux_servers
+      - linux_servers  # calling role to deploy
     vars:
      nagios_nrpe_server_allowed_hosts:
        - 192.168.10.16   # Nagios Server IP
