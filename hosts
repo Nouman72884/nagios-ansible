@@ -1,21 +1,8 @@
 [all]
-nagios_remote_server_1 ansible_host=18.206.86.136 ansible_user=ubuntu
-
-[windows]
-nagios1 ansible_host=18.206.86.136 ansible_user=ubuntu
-
-[switches]
-nagios1 ansible_host=18.206.86.136 ansible_user=ubuntu
+nagios ansible_host=3.236.194.89 ansible_user=ec2-user
 
 [all:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_ssh_private_key_file=abc.pem
 
-[windows:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_ssh_private_key_file=abc.pem
+ansible_ssh_private_key_file=nouman_pk.pem
 
-[switches:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_ssh_private_key_file=abc.pem
-ansible_ssh_private_key_file=yxz.pem
+

@@ -3,3 +3,7 @@
     become: true
     roles:
       - windows_servers
+    vars:
+     nagios_nrpe_server_allowed_hosts:
+       - 192.168.10.16   # Nagios Server IP
+       - 127.0.0.1
